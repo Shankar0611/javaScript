@@ -83,4 +83,15 @@ const Ans = arrObj.map((obj) => {
 }).sort((a, b) => {
     return a - b
 })
-console.log("Ans", Ans);
+// console.log("Ans", Ans);
+
+
+// Question 6
+// Check the given string is palindrome 
+// What is palindrome ?
+// civic, madam, radar, and deified. 
+// Ans
+var palindromeStr = "test"
+var reverse = palindromeStr.split('').reverse().join('')
+var solution = palindromeStr == reverse ? true : false
+// console.log("solution",solution);
