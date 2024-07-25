@@ -156,4 +156,23 @@
 // })
 //  console.log("newSamp",sample);
 
+// Question 9
+// Memoization
+// Ans
+// function memoizedFunction (a){
+//     if(!(a in cache)){
+//         console.log("Calculating");
+//         var result = a * 2;
+//         cache[a] = result;
+//     }
+//     return cache[a];
+// }
+
+//  var cache = {};
+// console.log(memoizedFunction(2));
+// console.log(memoizedFunction(5));
+// console.log(memoizedFunction(6));
+// console.log(memoizedFunction(7));
+// console.log(memoizedFunction(7));
+
 
