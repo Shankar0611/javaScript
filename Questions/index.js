@@ -211,20 +211,20 @@
 // console.log(1 + "1");
 
 
+// Question 14
 // Check palindrom
 // function checkPalindrome(text){
 //     return text.split("").reverse().join("") === text ? "Given text is palindrome" : "Given text is not palindrom"
 // }
 // console.log(checkPalindrome("radar"));
 
-
-
+// Question 15
 // Find the largest number in an array.
 // let arr = [10,2,4,7,9,12,45,67,89,56,46,3,99,134,23,999]
 // let largestNum = arr.sort((a,b)=> a-b).pop();
 // console.log("largestNum",largestNum);
 
-
+// Question 16
 //Remove duplicates from an array.
     // let arr = [1,1,2,2,4,4,5,5,33,6,6,7,7,7,5];
     // let Ans= []
@@ -235,7 +235,7 @@
     // }
     // console.log("Ans",Ans);
 
-
+// Question 17
 //Count the number of vowels in a string.
 // var vowels = ["a","e","i","o","u","y"]
 // var text = "something";
@@ -249,13 +249,13 @@
 // console.log("ans",ans);
 
 
-
+// Question 18
 // Flatten a nested array (e.g., [1, [2, [3, 4]]] → [1, 2, 3, 4]).
 // var nestedArray =[1, [2, [3, 4]]]
 // var flat = nestedArray.flat(Infinity)
 // console.log("flat",flat);
 
-
+// Question 19
 // Write a function for deep cloning an object.
 // function deepClone(data){
 //     return JSON.parse(JSON.stringify(data));
@@ -263,12 +263,124 @@
 // console.log(deepClone(data));
 
 
+// Question 20
+// Implement a debounce function.
+// document.getElementById("userInput").addEventListener("input", handleChange);
+// var timeout;
+// function handleChange(){
+//     var debounceTimer = 1000;
+//     var textBox = document.getElementById("userInput").value;
+//     clearTimeout(timeout);
+//     if(textBox != ""){
+//         timeout = setTimeout(()=>{
+//              console.log("data",textBox);
+//          },debounceTimer)
+//     }   
+// }
 
+// Question 21
+// Reverse a string without using .reverse()
+// let text = "sample"
+// let splitText = text.split("")
+// let ans = [];
+// for(let i = 0; i < splitText.length; i++){
+//     ans.unshift(splitText[i]);
+// }
+// console.log("ans",ans.join(""))
 
+// Question 22
+// Find the largest and smallest numbers in an array.
+// let array = [3,5,4,67,87,12,34,1,99]
+// let sortedArray = array.sort((a,b)=> a-b)
+// console.log("Lowest num is",sortedArray[0]);
+// console.log("Highest num is",sortedArray[sortedArray.length - 1]);
 
+// Question 23
+// Remove duplicate values from an array.
+// let array = [1,1,2,3,4,5,4,6,7,6,8,8,9,0,0,34,56]
+// let ans = [];
+// for(let i = 0; i < array.length; i++){
+//     if(!ans.includes(array[i])){
+//         ans.push(array[i])
+//     }
+// }
+// console.log("ans",ans);
 
+// Question 24
+// Count how many times each character appears in a string.
+// let text = "Sometimes";
+// let splitText = text.toLowerCase().split("")
+// let ans = [];
+// for(let i=0; i<splitText.length; i++){
+//    if(!ans.find((item)=> item.char == splitText[i])){
+//     let obj = {
+//         char: splitText[i],
+//         count: 1
+//     }
+//     ans.push(obj)
+//    }
+//    else{
+//     var found = ans.find((item)=> item.char == splitText[i])
+//     found.count++
+//    }
+// }
+// console.log("ans",ans);
 
+// Question 25
+// Flatten a deeply nested array.
+// const nestedArray = [1, [2, [3, [4, [5]]]], 6];
+// console.log((nestedArray.flat(Infinity)));
 
+// Question 26
+// Write a function to debounce another function.
+// var debounce;
+// function sample(){
+//     let debounceInterval = 1000;
+//     clearTimeout(debounce)
+
+//     debounce =setTimeout(()=>{
+//         console.log("Entered");
+//     },debounceInterval)
+// }
+// sample();
+
+// Question 27
+// Implement a deep clone of an object.
+// using JSON.parse(JSON.stringify()) can deep clone but in this functions cant clone for that need to use lodash like library
+
+// Question 28
+// Find the intersection of two arrays.
+// const array1 = [1, 2, 3, 4, 5];
+// const array2 = [3, 4, 5, 6, 7];
+// var ans=[]
+// for(let i=0; i<array1.length;i++){
+//     if(array2.includes(array1[i])){
+//         ans.push(array1[i])
+//     }
+// }
+// console.log("ans",ans)
+
+// Question 29
+// Write a function that returns the factorial of a number.
+// function findFactorial(num){
+//     let ans = 1
+//         for(let i=1; i<=num; i++){
+//             ans *= i 
+//         }
+//     return ans
+// }
+// console.log(findFactorial(4));
+
+// Question 30
+// Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers. 
+// let array = [1,2,3,4,5,6,7,8,9,10];
+// let ans = [];
+// for(let i = 1; i < array.length; i++){
+//     if((array[i] % 2) == 0){
+//         ans.push(array[i])
+//     }
+// }
+// console.log("ans",ans);
 
 
 
